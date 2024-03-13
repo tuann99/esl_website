@@ -12,39 +12,22 @@ h4 {
     flex-direction: row;
 }
 
-#lab-intro-div-content::after {
-    flex-direction: column;
-}
-
 #lab-members-pic {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
-    /* padding: 0;
-    margin: 0; */
-}
-
-#lab-members-pic img {
-    width: 100%;
-    /* padding: 0;
-    margin: 0; */
+    min-width: 300px;
 }
 
 #services-div-content {
     display: flex;
     flex-direction: row;
-    overflow-y: visible;
-}
-
-#services-div-content::after {
-    flex-direction: column;
 }
 
 #services-div-text {
     margin-right: 2vw;
     /* flex-shrink: 1; */
-    max-width: 480px;
+    max-width: 600px;
 }
-
 
 
 .slider {
@@ -54,7 +37,22 @@ h4 {
     overflow: hidden;
     /* flex-grow: 1; */
     /* overflow: visible; */
-    min-width: 300px;
+    min-width: 600px;
+}
+
+@media (max-width: 600px) {
+    #lab-intro-div-content,
+    #services-div-content {
+        flex-direction: column;
+    }
+
+    #lab-members-pic {
+        max-width: 100%;
+    }
+
+    .slider {
+        min-width: 100%;
+    }
 }
 
 .slides {
