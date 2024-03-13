@@ -1,6 +1,6 @@
 /* My Changes */
 /* --------------------------------------------------- */
-
+/* I also changed width of .col-md-8 from 66.66667% to 100% in 'bootstrap.css' */
 body {
     overflow-x: hidden;
     overflow-y: auto;
@@ -59,12 +59,6 @@ h4 {
     display: flex;
     flex-direction: row;
 }
-
-/* #lab-members-pic {
-    max-width: 600px;
-    height: auto;
-    min-width: 300px;
-} */
 
 #services-div-content {
     display: flex;
