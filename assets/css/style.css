@@ -1,0 +1,478 @@
+/* My Changes */
+/* --------------------------------------------------- */
+h4 {
+    font-family:"GothamBook";
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+#lab-intro-div-content {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#lab-members-pic {
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+#lab-members-pic img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#services-div-content {
+    display: flex;
+    flex-direction: row;
+}
+
+#services-div-text {
+    margin-right: 2vw;
+    flex-shrink: 1;
+    max-width: 50vw;
+}
+
+.slider {
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+    flex-grow: 1;
+    /* overflow: visible; */
+}
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slides img {
+    width: 300px;
+    height: 300px;
+}
+
+.slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+.slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+  
+.slider > a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+}
+.slider > a:active {
+    top: 1px;
+}
+.slider > a:focus {
+    background: #000;
+}
+
+/* --------------------------------------------------- */
+
+.navbar-secondary {
+    background-color:#80317b;
+}
+
+.navbar {text-transform:uppercase;
+    font-size:1em; letter-spacing:1.5px; border:0;
+}
+
+.navbar #menu-primary-menu {
+    background:#5a174f;
+}
+
+.navbar #menu-secondary {
+    background:#80317b;
+    width:100%;
+}
+
+header.masthead {
+    padding-top:2em;
+    background-color:#18453B;
+}
+
+.home header.masthead {
+    background-image:url(/assets/img/masthead.jpg);
+    background-size: cover;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: darken;
+}
+
+.masthead .container {
+    position:relative;
+}
+
+.page-header {
+    color:#000;
+    size: 1000px;
+}
+
+#band span {display:inline-block; white-space:nowrap;}
+#msu, #brand, .home #brand span {display:block;}
+
+#brand {font-family:"GothamBook"; margin:1em 0 1em; font-size:0.9em;}
+#brand .college {font-family:"GothamBook"; font-size:1.8em; letter-spacing:1px;}
+#brand .department {font-family:"GothamBlack"; text-transform:uppercase;font-size:1.8em; letter-spacing:2px;}
+
+
+.home #brand {margin-bottom:240px; font-size:1.4em; line-height:1;}
+.home a#msu {margin-bottom:12em;}
+
+
+.msu-brand a {color:#fff; text-decoration:none;}
+
+h1{font-family:"GothamBlack"; text-transform:uppercase; color:#18453B; font-size: 1.8em;}
+
+div.introduction { text-align:center; margin:36px 120px 36px 120px;}
+
+blockquote,
+.introduction h2 { font-family:"serif"; font-size:1.8em; margin:0 0 36px 0;}
+
+.newsworthy h2 { font-family:"GothamBlack"; text-transform:uppercase; font-size:1.2em; font-weight:400; color:#18453B; border-bottom: 1px solid #dedede;}
+
+
+#sections {background-color:#8a91b6; color:#fff; margin:1.5em 0 4em 0;}
+#sections a {color:#fff;}
+#sections .section {text-align:center; position:relative;}
+#sections strong {
+    display:inline-block;
+    font-family:"GothamMedium";
+    text-transform:uppercase;
+    padding:0.25em 1em;
+    font-size:1.6em; border-bottom:1px solid;
+    margin-bottom:1em;
+}
+
+
+#sections .section-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /* margin-top:-2em; */
+}
+#sections .section.blur {background:#636882;}
+#sections .section.blur p,
+#sections .section.blur a {visibility:hidden;}
+
+#sections .section {
+    background-color:#8a91b6;
+    background-size:cover !important;
+    background-repeat:no-repeat !important;
+    height:400px;
+    padding-top:1em;
+}
+
+#sections .section.section_research.blur { background-image:url(/assets/img/sections/research.jpg);}
+#sections .section.section_residency-networks.blur { background-image:url(/assets/img/sections/residency.jpg);}
+#sections .section.section_teaching.blur { background-image:url(/assets/img/sections/teaching.jpg);}
+
+.contain-footer {margin-top:3em;}
+
+.blur.listing {background-color:#dedede;}
+
+.listing-body {padding:1em; text-align:center;}
+
+.listing {
+    margin-bottom:2.05em;
+    background-color:#f4f4f4;
+}
+
+.feature-faculty-list .listing {
+    background:transparent;
+}
+
+.listing-media {
+    margin:0 auto;
+}
+
+.listing h4 {
+    color:#18453B;
+    font-family:"GothamBold";
+    font-size: 1.4em;
+    margin-bottom:1em;
+}
+
+.listing.type-post h4 {
+    color:inherit;
+    text-transform:none;
+    font-size:1.2em;
+    font-weight:normal;
+}
+
+.listing a.title-link{
+    color:inherit !important;
+}
+
+.listing-body .more {
+    display:inline-block;
+    padding:0 1em;
+    text-transform:uppercase; border-bottom:1px solid;
+    margin: 1em auto;
+}
+
+.listing.type-post {
+    border-top:10px solid #0b3127;
+}
+
+.type-post .listing-body {text-align:left;}
+
+
+.list-group-item.active a {color:#fff;}
+
+
+.person-city:after {content: ", "; }
+
+div.person-info {padding-top:1em;}
+
+/* #menu-primary-menu li:nth-last-child(-n+3) { */
+/*     background:#80317b; */
+/* } */
+
+.carousel-inner .item {
+    height:400px;
+    background-size: cover;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: darken;
+}
+
+.carousel-caption {
+    text-align:left;
+}
+
+.carousel-caption a {color:#fff;}
+
+#carousel-example-generic {position:relative; top:-1.5em;}
+
+
+.meet-faculty {
+    text-align:center; font-size:1.3em;
+    padding-top:150px;
+    padding-bottom:40px;
+    background:url('/assets/img/flair.png') no-repeat 53% 10px;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .meet-faculty {
+        padding-left:1em;
+        border-left:1px solid;
+    }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .navbar {
+        /* background:url(/assets/img/nav.png); */
+        /* background-size: cover; */
+    }
+
+    .navbar #menu-primary-menu {
+        padding-right:3em;
+    }
+
+    .navbar #menu-secondary {
+        width:auto;
+        float:right;
+        position:relative;
+        right:-3em;
+    }
+
+}
+
+
+.meet-faculty p.inspire {font-family:serif;}
+
+.research-list {
+    margin-top:3em;
+}
+
+/* MAP */
+
+.map-container {
+    position:relative;
+}
+
+.res-map {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+
+.res-map li {
+    display:none;
+}
+
+.res-map li.grand-rapids,
+.res-map li.grand-blanc,
+.res-map li.marquette,
+.res-map li.lansing,
+.res-map li.southfield,
+.res-map li.midland,
+.res-map li.flint,
+.res-map li.kalamazoo,
+.res-map li.gratiot,
+.res-map li.traverse-city,
+.res-map li.detroit {
+    display:block;
+    position:absolute;
+}
+
+
+.res-map li.grand-rapids {top:73%; left:50%;}
+.res-map li[data-res="res1542"] {left:53%;}
+.res-map li.grand-blanc {top:80%; left:80%;}
+.res-map li.marquette {top:14%; left:30%;}
+.res-map li.lansing {top:83%; left:66%;}
+.res-map li.southfield {top:90%; left:75%;}
+.res-map li.midland {top:63%; left:68%;}
+.res-map li.flint {top:78%; left:78%;}
+.res-map li.kalamazoo {top:86%; left:48%;}
+.res-map li.gratiot {top:72%; left:64%;}
+.res-map li.traverse-city {top:44%; left:50%;}
+.res-map li.detroit {top:90%; left:85%;}
+
+.res-map a:focus,
+.res-map a:hover {
+    color:#18453B;
+    outline:0;
+}
+
+.res-map .res-pop img {
+    display:block;
+    max-width:100%;
+}
+
+.popover-title {
+    color:#fff;
+}
+
+
+.popover {
+    border:0;
+    padding:0;
+    min-width:200px;
+}
+
+
+.container img {max-width:100%;}
+
+.has-thumb .content-col {border-right:1px solid #ccc;}
+
+.dfm_foot {
+    background:#325048;
+    color:#fff;
+    padding:3em 0 2em 0;
+    text-align:center;
+    margin-top:3em;
+}
+
+.ft-box {
+    border-bottom:1px solid #fff;
+    padding-bottom:1em;
+    margin-bottom:1em;
+}
+
+
+.dfm_foot a { color:#fff !important; text-decoration:none !important;}
+
+.dfm_foot strong {
+    text-transform:uppercase;
+    font-family:"GothamBlack"; margin:1em 0 1em; font-size:1.2em;
+}
+
+@media only screen and (min-width : 992px) {
+    .ft-box {
+        border-left:1px solid #fff;
+        padding-left:2em;
+        border-bottom:0;
+        padding-bottom:0;
+        margin-bottom:0;
+    }
+
+    .dfm_foot div.col-md-3:first-child > div.ft-box {
+        border:0;
+    }
+}
+
+
+.card-menu {
+    margin:2em 0;
+}
+
+
+.extras-group ul {
+    list-style-type:square;
+}
+
+.grant-index h3 a {
+    color:#18453B;
+}
+
+header #MSUSearchTool {
+    position:absolute !important;
+    top:5px;
+    right:0;
+    display:none;
+}
+
+#MSUSearchTool label {
+    margin:0;
+    font-size:10px;
+    border:0;
+}
+
+#MSUSearchTool label input {
+    background:#fff;
+    color:#000;
+    border:0;
+    padding:3px;
+}
+
+@media only screen and (min-width : 600px) {
+    header #MSUSearchTool {display:block;}
+}
+
