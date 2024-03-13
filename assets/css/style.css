@@ -8,20 +8,20 @@ h4 {
 
 #lab-intro-div-content {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 #lab-members-pic {
     max-width: 100%;
     height: auto;
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
 }
 
 #lab-members-pic img {
     width: 100%;
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
 }
 
 #services-div-content {
@@ -32,11 +32,12 @@ h4 {
 #services-div-text {
     margin-right: 2vw;
     flex-shrink: 1;
-    max-width: 50vw;
+    max-width: 480px;
 }
 
 .slider {
-    width: 300px;
+    /* width: 300px; */
+    width: 10vw;
     text-align: center;
     overflow: hidden;
     flex-grow: 1;
@@ -48,7 +49,7 @@ h4 {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+    /* -webkit-overflow-scrolling: touch; */
 }
 
 .slides img {
