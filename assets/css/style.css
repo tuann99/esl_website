@@ -10,6 +10,7 @@
     position: relative;
     width: 100%;
     height: auto;
+    min-width: 360px;
 }
 
 .bg-img img {
@@ -30,13 +31,15 @@
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: 1.5rem;
     text-shadow: #000;
     line-height: 1;
 }
 
 .big-text {
-    font-size: 45px;
+    /* font-size: 45px; */
+    font-size: 4rem;
 }
 
 h4 {
@@ -50,33 +53,43 @@ h4 {
     flex-direction: row;
 }
 
-#lab-members-pic {
+/* #lab-members-pic {
     max-width: 600px;
     height: auto;
     min-width: 300px;
-}
+} */
 
 #services-div-content {
     display: flex;
     flex-direction: row;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    align-items: center;
 }
 
 #services-div-text {
-    margin-right: 2vw;
-    /* flex-shrink: 1; */
-    /* max-width: 600px; */
+    margin-right: 2rem;
 }
 
 
 .slider {
-    /* width: 300px; */
     width: 10vw;
     text-align: center;
     overflow: hidden;
     /* flex-grow: 1; */
     /* overflow: visible; */
     min-width: 600px;
+    max-height: 100%;
+    
 }
+
+@media (max-width: 570px) {
+    .banner-text {
+        font-size:0.9rem;
+    } 
+    .big-text {
+        font-size: 3rem;
+    } }
 
 @media (max-width: 768px) {
     #lab-intro-div-content,
@@ -99,23 +112,20 @@ h4 {
     }
     .image-div, .slider {
         align-self: center;
-    }
-    .banner-text {
-        font-size: 25px;
-    } }
+    }}
 
 .slides {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    /* -webkit-overflow-scrolling: touch; */
+    /* height: 100%; */
 }
 
 .slides img {
-    /* width: 300px; */
+    width: 300px;
     max-width: 80% max-content;
-    height: 300px;
+    /* height: 100%; */
 }
 
 .slides p {
@@ -141,7 +151,8 @@ h4 {
     scroll-snap-align: start;
     flex-shrink: 0;
     width: 600px;
-    height: 300px;
+    /* height: 300px; */
+    height: 100%;
     margin-right: 50px;
     border-radius: 10px;
     background: #eee;
@@ -153,7 +164,6 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 100px;
 }
   
 .slider > a {
