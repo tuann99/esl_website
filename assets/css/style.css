@@ -13,7 +13,7 @@ h4 {
 }
 
 #lab-members-pic {
-    max-width: 50%;
+    max-width: 600px;
     height: auto;
     min-width: 300px;
 }
@@ -26,7 +26,7 @@ h4 {
 #services-div-text {
     margin-right: 2vw;
     /* flex-shrink: 1; */
-    max-width: 600px;
+    /* max-width: 600px; */
 }
 
 
@@ -40,7 +40,7 @@ h4 {
     min-width: 600px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #lab-intro-div-content,
     #services-div-content {
         flex-direction: column;
@@ -52,8 +52,16 @@ h4 {
 
     .slider {
         min-width: 100%;
+    } }
+
+@media (max-width: 992px) {
+    #lab-intro-div-content,
+    #services-div-content {
+        flex-direction: column;
     }
-}
+    .image-div, .slider {
+        align-self: center;
+    } }
 
 .slides {
     display: flex;
