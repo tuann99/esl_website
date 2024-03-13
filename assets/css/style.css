@@ -92,10 +92,11 @@ h4 {
 
 @media (max-width: 570px) {
     .banner-text {
-        font-size:0.9rem;
+        font-size:0.8rem;
+        line-height: 0.9;
     } 
     .big-text {
-        font-size: 3rem;
+        font-size: 2.5rem;
     } }
 
 @media (max-width: 768px) {
