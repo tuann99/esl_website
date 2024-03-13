@@ -1,6 +1,44 @@
 /* My Changes */
 /* --------------------------------------------------- */
 
+.bg-img { 
+    overflow:hidden;
+	/* background-image: url(../img/MSU_Exposure_Science_Lab_2022_cropped_2.jpg); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    /* filter: blur(4px); */
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.bg-img img {
+    filter: blur(2px);
+}
+
+#text-div {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-text { 
+    color: rgba(255, 255, 255, 1);
+    font-family: "GothamBlack";
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: #000;
+    line-height: 1;
+}
+
+.big-text {
+    font-size: 45px;
+}
+
 h4 {
     font-family:"GothamBook";
     text-transform: capitalize;
@@ -61,6 +99,9 @@ h4 {
     }
     .image-div, .slider {
         align-self: center;
+    }
+    .banner-text {
+        font-size: 25px;
     } }
 
 .slides {
@@ -74,6 +115,13 @@ h4 {
 .slides img {
     width: 300px;
     height: 300px;
+}
+
+.slides p {
+    font-size: 16px;
+    text-align: left;
+    padding: 1.5rem;
+    color:#0b3127;
 }
 
 .slides::-webkit-scrollbar {
@@ -90,7 +138,7 @@ h4 {
 .slides > div {
     scroll-snap-align: start;
     flex-shrink: 0;
-    width: 300px;
+    width: 600px;
     height: 300px;
     margin-right: 50px;
     border-radius: 10px;
