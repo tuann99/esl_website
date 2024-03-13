@@ -45,12 +45,8 @@ h4 {
     max-width: 480px;
 }
 
-@media (max-width: 600px) {
-    #lab-intro-div-content,
-    #services-div-content {
-        flex-direction: column;
-    }
-}
+
+
 .slider {
     /* width: 300px; */
     width: 10vw;
