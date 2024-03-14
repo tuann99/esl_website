@@ -2,14 +2,15 @@
 /* --------------------------------------------------- */
 /* I also changed width of .col-md-8 from 66.66667% to 100% in 'bootstrap.css' */
 /* Changed primary-navigation to have no bottom margin */
+
 /* body {
     overflow-x: hidden;
     overflow-y: auto;
 } */
 
-#primary-navigation {
+/* #primary-navigation {
     margin-bottom: 0;
-}
+} */
 
 #wrapper {
     position: relative;
@@ -27,8 +28,10 @@
     margin-bottom: -10vh;
 } */
 
+/* Banner Styling Start */
+
 .bg-img { 
-    overflow:hidden;
+    overflow: hidden;
 	/* background-image: url(../img/MSU_Exposure_Science_Lab_2022_cropped_3.jpg);
     background-repeat: no-repeat;
     background-size: cover; */
@@ -39,11 +42,10 @@
     min-width: 360px;
     min-height: -moz-fit-content;
     min-height: fit-content;
-    max-height: 50vh;
+    max-height: 300px;
 }
 
 .bg-img img {
-    /* filter: blur(2px); */
     width: 100%;
 }
 
@@ -61,15 +63,34 @@
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    /* font-size: 30px; */
     font-size: 2rem;
-    text-shadow: 2px 5px 5px rgba(0, 0, 0, 1);
+    /* text-shadow: 2px 5px 5px rgba(0, 0, 0, 1); */
     line-height: 1.1;
 }
 
 .big-text {
-    /* font-size: 45px; */
-    font-size: 4rem;
+    font-size: 4.5rem;
+}
+
+/* Banner Styling End */
+
+#recruitment-link-button {
+    background-color: #18453B;
+    /* display: block; */
+    margin: 0 auto;
+    border: none;
+    padding: 15px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: #fff;
+    width: 100%;
+}
+
+#recruitment-link {
+    color: #fff;
 }
 
 h4 {
@@ -79,6 +100,136 @@ h4 {
     font-size: 2rem;
 }
 
+.new-row {
+    /* height: 600px; */
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    height: 100%; 
+    width: 100%;
+
+}
+
+/* ---------------------------------------------------------- */
+
+#who-we-are-content {
+    flex-grow: 1;
+}
+
+#lab-members-pic img {
+    flex-grow: 1;
+    max-width: 600px;
+}
+
+/* ---------------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* slider start */
+
+.slider {
+    /* width: 10vw; */
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    /* flex-grow: 1; */
+    /* overflow: visible; */
+    min-width: 600px;
+    max-height: 100%;
+    /* overflow-x: hidden; */
+}
+
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    /* height: 100%; */
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+}
+
+.slides img {
+    /* width: 300px;
+    max-width: 80% max-content;
+    height: 300px; */
+    object-fit: cover;
+    width: 50%;
+    height:auto;
+}
+
+.slides p {
+    /* font-size: 16px; */
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 1.6rem;
+    color:#0b3127;
+}
+
+.slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+.slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    /* width: 600px; */
+    /* height: 300px; */
+    width: 100%;
+    height: 100%;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.slider > a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+}
+.slider > a:active {
+    top: 1px;
+}
+.slider > a:focus {
+    background: #000;
+}
+
+/* slider end */
+
+/* ---------------------------------------------------------- */
+
 .content-container p, span {
     font-size: 1.75rem;
 }
@@ -86,6 +237,10 @@ h4 {
 #lab-intro-div-content {
     display: flex;
     flex-direction: row;
+}
+
+#lab-intro-div-text {
+    margin-right: 2.2rem;
 }
 
 #services-div-content {
@@ -97,20 +252,10 @@ h4 {
 }
 
 #services-div-text {
-    margin-right: 2rem;
+    margin-right: 2.2rem;
 }
 
-
-.slider {
-    width: 10vw;
-    text-align: center;
-    overflow: hidden;
-    /* flex-grow: 1; */
-    /* overflow: visible; */
-    min-width: 600px;
-    max-height: 100%;
-    /* overflow-x: hidden; */
-}
+/* ---------------------------------------------------------- */
 
 @media (max-width: 570px) {
     .banner-text {
@@ -144,79 +289,25 @@ h4 {
         align-self: center;
     } }
 
-.slides {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    /* height: 100%; */
-}
-
-.slides img {
-    width: 300px;
-    max-width: 80% max-content;
-    height: 300px;
-    object-fit: cover;
-}
-
-.slides p {
-    /* font-size: 16px; */
-    font-size: 1.2rem;
-    text-align: left;
-    padding: 1.6rem;
-    color:#0b3127;
-}
-
-.slides::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-.slides::-webkit-scrollbar-thumb {
-    background: black;
-    border-radius: 10px;
-}
-.slides::-webkit-scrollbar-track {
-    background: transparent;
-}
-.slides > div {
-    scroll-snap-align: start;
-    flex-shrink: 0;
-    width: 600px;
-    /* height: 300px; */
-    height: 100%;
-    margin-right: 50px;
-    border-radius: 10px;
-    background: #eee;
-    transform-origin: center center;
-    transform: scale(1);
-    transition: transform 0.5s;
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
-.slider > a {
-    display: inline-flex;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: white;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin: 0 0 0.5rem 0;
-    position: relative;
-}
-.slider > a:active {
-    top: 1px;
-}
-.slider > a:focus {
-    background: #000;
-}
+@media (max-width: 992px) {
+    .new-row {
+        margin-top: 15px;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    #what-we-do-container {
+        flex-direction: column-reverse;
+    }
+    .image-div, .slider {
+        align-self: center;
+    } }
 
 /* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+
 
 .navbar-secondary {
     background-color:#80317b;
