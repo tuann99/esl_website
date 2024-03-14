@@ -7,9 +7,9 @@
     overflow-y: auto;
 } */
 
-/* #primary-navigation {
+#primary-navigation {
     margin-bottom: 0;
-} */
+}
 
 #wrapper {
     position: relative;
@@ -39,14 +39,16 @@
     min-width: 360px;
     min-height: -moz-fit-content;
     min-height: fit-content;
+    max-height: 50vh;
 }
 
 .bg-img img {
     /* filter: blur(2px); */
+    width: 100%;
 }
 
 #text-div {
-    width: 100%;
+    width: 95%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -62,7 +64,7 @@
     /* font-size: 30px; */
     font-size: 2rem;
     text-shadow: 2px 5px 5px rgba(0, 0, 0, 1);
-    line-height: 1;
+    line-height: 1.1;
 }
 
 .big-text {
