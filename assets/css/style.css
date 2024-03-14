@@ -16,7 +16,16 @@
     overflow-x: hidden;
 }
 
-
+/* #landing-div {
+    background-image: url(../img/carbon-bg.jpeg);
+    background-image: url(../img/MSU_Exposure_Science_Lab_2022_cropped_2.jpg);
+    height: 20vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #18453B;
+    margin-bottom: -10vh;
+} */
 
 .bg-img { 
     overflow:hidden;
@@ -37,7 +46,7 @@
 }
 
 #text-div {
-    width: 90%;
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -131,7 +140,7 @@ h4 {
     }
     .image-div, .slider {
         align-self: center;
-    }}
+    } }
 
 .slides {
     display: flex;
