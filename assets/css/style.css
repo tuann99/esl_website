@@ -2,9 +2,13 @@
 /* --------------------------------------------------- */
 /* I also changed width of .col-md-8 from 66.66667% to 100% in 'bootstrap.css' */
 
-body {
+/* body {
     overflow-x: hidden;
     overflow-y: auto;
+} */
+
+#wrapper {
+    overflow-x: hidden;
 }
 
 .bg-img { 
