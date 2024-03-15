@@ -74,6 +74,8 @@
 
 /* Banner Styling End */
 
+/* ---------------------------------------------------------- */
+
 #recruitment-link-button {
     background-color: #18453B;
     /* display: block; */
@@ -93,6 +95,8 @@
     color: #fff;
 }
 
+/* ---------------------------------------------------------- */
+
 h4 {
     font-family:"GothamBook";
     text-transform: capitalize;
@@ -111,41 +115,69 @@ h4 {
     align-items: center;
     height: 100%; 
     width: 100%;
+}
 
+.content-container p, span {
+    font-size: 1.75rem;
 }
 
 /* ---------------------------------------------------------- */
+/* lab intro stuff */
 
 #who-we-are-content {
     flex-grow: 1;
 }
 
-#lab-members-pic img {
+#lab-intro-div-content {
+    display: flex;
+    flex-direction: row;
+}
+
+#lab-intro-div-text {
+    margin-right: 2.2rem;
+}
+
+#lab-members-pic-div {
+    height: 100%;
+    width: 100%;
     flex-grow: 1;
-    max-width: 600px;
+}
+
+#lab-members-pic-div figure {
+}
+
+#lab-members-pic-div img {
+    min-width: 500px;
+    width: 100%;
+    height:auto;
+    /* max-height: 400px; */
 }
 
 /* ---------------------------------------------------------- */
+/* services stuff */
 
+#services-div-content {
+    display: flex;
+    flex-direction: row;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    align-items: center;
+}
 
-
-
-
+#services-div-text {
+    margin-right: 2.2rem;
+}
 
 
 
 /* slider start */
 
 .slider {
-    /* width: 10vw; */
     width: 100%;
     text-align: center;
     overflow: hidden;
-    /* flex-grow: 1; */
-    /* overflow: visible; */
     min-width: 600px;
     max-height: 100%;
-    /* overflow-x: hidden; */
 }
 
 
@@ -154,22 +186,17 @@ h4 {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    /* height: 100%; */
     max-width: -moz-fit-content;
     max-width: fit-content;
 }
 
 .slides img {
-    /* width: 300px;
-    max-width: 80% max-content;
-    height: 300px; */
     object-fit: cover;
     width: 50%;
     height:auto;
 }
 
 .slides p {
-    /* font-size: 16px; */
     font-size: 1.2rem;
     text-align: left;
     padding: 1.6rem;
@@ -230,30 +257,6 @@ h4 {
 
 /* ---------------------------------------------------------- */
 
-.content-container p, span {
-    font-size: 1.75rem;
-}
-
-#lab-intro-div-content {
-    display: flex;
-    flex-direction: row;
-}
-
-#lab-intro-div-text {
-    margin-right: 2.2rem;
-}
-
-#services-div-content {
-    display: flex;
-    flex-direction: row;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
-    align-items: center;
-}
-
-#services-div-text {
-    margin-right: 2.2rem;
-}
 
 /* ---------------------------------------------------------- */
 
@@ -267,10 +270,10 @@ h4 {
     } }
 
 @media (max-width: 768px) {
-    #lab-intro-div-content,
+    /* #lab-intro-div-content,
     #services-div-content {
         flex-direction: column;
-    }
+    } */
 
     #lab-members-pic {
         max-width: 100%;
@@ -285,11 +288,19 @@ h4 {
     #services-div-content {
         flex-direction: column;
     }
+
+    #lab-intro-div-content {
+        /* align-items: center;
+        justify-content: center; */
+        overflow-x:hidden;
+    }
+
     .image-div, .slider {
         align-self: center;
     } }
 
-@media (max-width: 992px) {
+/* Media query for other page setup */
+/* @media (max-width: 992px) {
     .new-row {
         margin-top: 15px;
     }
@@ -301,7 +312,7 @@ h4 {
     }
     .image-div, .slider {
         align-self: center;
-    } }
+    } } */
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
