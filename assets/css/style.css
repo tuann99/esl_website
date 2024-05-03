@@ -111,7 +111,8 @@ div {
 #lab-desc-text, #services-text {
     max-width: 500px;
     min-width: 300px;
-    font-size: 1.75rem;    
+    font-size: 1.75rem;   
+    margin-right: 4rem; 
 }
 
 #lab-desc-text {
