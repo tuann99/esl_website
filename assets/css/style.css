@@ -1,19 +1,41 @@
 /* My Changes */
 /* --------------------------------------------------- */
-/* I also changed width of .col-md-8 from 66.66667% to 100% in 'bootstrap.css' */
+/* changed width of .col-md-8 from 66.66667% to 100% in 'bootstrap.css' */
 /* Changed primary-navigation to have no bottom margin */
+/* changed .dfm_foot to have no top margin*/
+.container p {
+    font-size: 18px;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+body {
     overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fff;
 }
 
 div {
     box-sizing: border-box;
 }
 
+h2 {
+    font-family:"GothamBook";
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+hr {
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
+}
+
 .button {
     background-color: #ffffff;
-    color: white;
+    color: #18453B;
     padding: 10px 24px;
     margin: 4px 2px;
     display: inline-block;
@@ -25,31 +47,38 @@ div {
 .button:hover {
     transform: translateY(-2px);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    background-color: #7BBD00;
+    color: #fff;
+    text-decoration: none;
 }
 
 .content-container {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    padding: 3rem;
     width: 100%;
-    max-width: 1200px;
-
     align-items: center;
 }
 
-.background-color-wrapper {
-    background-color: #f9fff8;
+#primary-navigation {
+    margin-bottom: 0;
 }
+
+#wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
 /* ------------------------------------------- */
 
 #intro-div {
     text-align: center;
     background-color: #f9fff8;
-    padding: 20rem 0;
+    padding: 12rem 2rem;
 }
 
 #intro-div p {
+    padding-top: 10px;
     font-size: 2rem;
     font-weight: lighter;
 }
@@ -63,7 +92,6 @@ div {
 }
 
 #intro-div h1 {
-    padding: 0;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -74,16 +102,13 @@ div {
 
 #study-contact-div {
     background-color: #18453B;
-    padding: 10rem 0;
+    padding: 8rem 0;
     text-align: center;
-
 }
 
-#study-contact-div h4 {
+#study-contact-div h2 {
     color: #fff;
-    font-size: 2.5rem;
     letter-spacing: 1.5px;
-    /* font-weight: lighter; */
 }
 
 #study-contact-div p {
@@ -91,6 +116,7 @@ div {
     font-size: 2rem;
     font-weight: lighter;
     letter-spacing: 1.1px;
+    padding-bottom: 10px;
 }
 
 #study-contact-div p:first-letter {
@@ -98,7 +124,6 @@ div {
 }
 
 #study-contact-div a {
-    color: #ffffff;
     font-size: 2rem;
     letter-spacing: 1.1px;
 }
@@ -109,7 +134,7 @@ div {
 /* ------------------------------------------- */
 
 #lab-desc-text, #services-text {
-    max-width: 500px;
+    max-width: 600px;
     min-width: 300px;
     font-size: 1.75rem;   
     margin-right: 4rem; 
@@ -120,251 +145,42 @@ div {
 }
 
 #lab-desc-div {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 #lab-desc-div img {
     padding: 1.1rem;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     width: 100%;
     height: auto;
 }
 
 /* ------------------------------------------- */
 
-/* #outreach-div {
-    background-color: #18453B;
-    width: 100%;
-    max-width: 100%;
-}
-
-#outreach-div .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 3rem 0;
-}
-
-#outreach-div h4, #outreach-div p {
-    color: #fff;
-} */
-/* ------------------------------------------- */
 #services-div {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5%;
 }
 
 #services-div-background {
-    background-color: #18453B;
+    background-color: #f9fff8;
 }
 
 #services-text, #services-text a {
-    color: #fff;
+    color: #18453B;
+
 }
 
 /* ------------------------------------------- */
-
-@media (max-width: 992px) {
-    .slider {
-        min-width: 100%;
-    }
-    .slides {
-        min-width: 600px;
-    }
-    #lab-desc-div img img {
-        min-width: 0;
-    }
-    .content-container {
-        flex-direction: column;
-    }
-    #lab-intro-div-text, #services-div-text {
-        margin-right: 0;
-    }
-    #lab-intro-div-content {
-        overflow-x:hidden;
-    }
-    .image-div, .slider {
-        align-self: center;
-    } }
-
-@media (min-width: 993px) {
-    .slider {
-        width: 600px;
-    }
-    .slides {
-        width: 600px;
-    } }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* body {
-    overflow-x: hidden;
-    overflow-y: auto;
-} */
-
-#primary-navigation {
-    margin-bottom: 0;
-}
-
-#wrapper {
-    position: relative;
-    overflow-x: hidden;
-}
-
-/* Banner Styling Start */
-
-.bg-img { 
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: auto;
-    min-width: 360px;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
-    max-height: 300px;
-}
-
-.bg-img img {
-    width: 100%;
-    filter: blur(4px);
-}
-
-#text-div {
-    width: 95%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.banner-text { 
-    color: rgba(255, 255, 255, 1);
-    font-family: "GothamBlack";
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2rem;
-    line-height: 1.1;
-}
-
-.big-text {
-    font-size: 4.5rem;
-}
-/* Banner Styling End */
-
-/* ---------------------------------------------------------- */
-
-#recruitment-link-button {
-    background-color: #18453B;
-    border: none;
-    padding: 15px 15px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    color: #fff;
-    width: 100%;
-    transition: all 0.3s ease;
-}
-
-#recruitment-link-button:hover {
-    text-decoration: underline;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
-    transform: translateY(-2px);
-}
-
-#recruitment-link {
-    color: #fff;
-}
-
-/* ---------------------------------------------------------- */
-
-h4 {
-    font-family:"GothamBook";
-    text-transform: capitalize;
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-.new-row {
-    height: -moz-fit-content;
-    height: fit-content;
-}
-
-.flex-container {
-    display: flex;
-    align-items: center;
-    height: 100%; 
-    width: 100%;
-}
-
-/* .content-container p, span {
-    font-size: 1.75rem;
-} */
-
-/* ---------------------------------------------------------- */
-/* lab intro stuff */
-
-#who-we-are-content {
-    flex-grow: 1;
-}
-
-#lab-intro-div-content {
-    display: flex;
-    flex-direction: row;
-}
-
-#lab-intro-div-text {
-    margin-right: 2.2rem;
-}
-
-#lab-members-pic-div {
-    height: 100%;
-    width: 100%;
-    flex-grow: 1;
-}
-
-#lab-members-pic-div img {
-    min-width: 500px;
-    width: 100%;
-    height: auto;
-}
-
-/* ---------------------------------------------------------- */
-/* services stuff */
-
-#services-div-content {
-    display: flex;
-    flex-direction: row;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
-    align-items: center;
-}
-
-#services-div-text {
-    margin-right: 2.2rem;
-}
 
 /* slider start */
 
 .slider {
-    width: 100%;
     text-align: center;
     overflow: hidden;
-    min-width: 500px;
+    min-width: 600px;
+    width: 100%;
 }
 
 
@@ -373,18 +189,18 @@ h4 {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
+    max-width: 900px;
+    max-height: 410px;
 }
 
 .slides img {
     object-fit: cover;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
 }
 
 .slides p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     text-align: left;
     padding: 1.6rem;
     color:#0b3127;
@@ -395,7 +211,7 @@ h4 {
     height: 10px;
 }
 .slides::-webkit-scrollbar-thumb {
-    background: rgb(255, 255, 255);
+    background: #18453B;
     border-radius: 10px;
 }
 .slides::-webkit-scrollbar-track {
@@ -419,12 +235,15 @@ h4 {
     align-items: center;
 }
 
+.slides > div:last-child {
+    margin-right: 0;
+}
+
 .slider > a {
     display: inline-flex;
     width: 2rem;
     height: 2rem;
     background: white;
-    text-decoration: none;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
@@ -438,49 +257,38 @@ h4 {
     background: #000;
 }
 
-/* slider end */
+/* ------------------------------------------- */
 
-/* ---------------------------------------------------------- */
+#outreach-div {
+    display: block;
+    padding-bottom: 5%;
+}
 
+#contact-div {
+    padding-bottom: 5%;
+}
 
-/* ---------------------------------------------------------- */
-
-@media (max-width: 570px) {
-    .banner-text {
-        line-height: 0.9;
-    } }
-
+/* ------------------------------------------- */
 @media (max-width: 992px) {
     .slider {
-        min-width: 100%;
+        width: 100%;
+        min-width: 400px;
     }
     .slides {
         min-width: 600px;
     }
-    #lab-members-pic-div img {
-        min-width: 0;
+    #lab-desc-img {
+        text-align: center;
     }
-    #lab-intro-div-content,
-    #services-div-content {
+    .content-container {
         flex-direction: column;
     }
-    #lab-intro-div-text, #services-div-text {
+    #lab-desc-text, #services-text {
         margin-right: 0;
-    }
-    #lab-intro-div-content {
-        overflow-x:hidden;
-    }
-    .image-div, .slider {
-        align-self: center;
+        max-width: 100%;
     } }
 
-@media (min-width: 993px) {
-    .slider {
-        width: 600px;
-    }
-    .slides {
-        width: 600px;
-    } }
+/* ------------------------------------------- */
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
@@ -788,7 +596,7 @@ div.person-info {padding-top:1em;}
     color:#fff;
     padding:3em 0 2em 0;
     text-align:center;
-    margin-top:3em;
+    /* margin-top:3em; */
 }
 
 .ft-box {
