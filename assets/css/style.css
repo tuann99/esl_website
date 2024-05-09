@@ -280,12 +280,22 @@ hr {
 @media (max-width: 992px) {
     .slider {
         width: 100%;
-        min-width: 400px;
+        min-width: 200px;
     }
     .slides {
         width: 100%;
-        min-width: 600px;
-        max-height: 410px;
+    }
+    .slides p {
+        width: 100%;
+        font-size: 12px;
+    }
+    .slides img {
+        width: 200px;
+        height: 400px;
+    }
+    .slides > div {
+        margin-right: 25px;
+        min-width: 400px;
     }
     #lab-desc-img {
         text-align: center;
