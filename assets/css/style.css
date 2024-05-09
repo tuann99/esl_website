@@ -73,9 +73,9 @@ hr {
 /* ------------------------------------------- */
 
 #intro-div {
-    text-align: center;
     background-color: #f9fff8;
-    padding: 12rem 2rem;
+    text-align: center;
+    padding: 6rem 0;
 }
 
 #intro-div p {
@@ -103,8 +103,8 @@ hr {
 
 #study-contact-div {
     background-color: #18453B;
-    padding: 8rem 0;
     text-align: center;
+    padding: 6rem 0;
 }
 
 #study-contact-div h2 {
