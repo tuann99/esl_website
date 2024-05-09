@@ -206,6 +206,7 @@ hr {
     text-align: left;
     padding: 1.6rem;
     color:#0b3127;
+    max-height: 410px;
 }
 
 .slides::-webkit-scrollbar {
