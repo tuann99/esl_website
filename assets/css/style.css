@@ -181,8 +181,8 @@ hr {
 .slider {
     text-align: center;
     overflow: hidden;
-    min-width: 600px;
     width: 100%;
+    min-width: 600px;
 }
 
 
@@ -192,7 +192,6 @@ hr {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     max-width: 900px;
-    max-height: 410px;
 }
 
 .slides img {
@@ -202,11 +201,11 @@ hr {
 }
 
 .slides p {
-    font-size: 1.25rem;
+    font-size: 12.5px;
     text-align: left;
     padding: 1.6rem;
     color:#0b3127;
-    max-height: 410px;
+    /* min-width: 300px; */
 }
 
 .slides::-webkit-scrollbar {
@@ -284,7 +283,9 @@ hr {
         min-width: 400px;
     }
     .slides {
+        width: 100%;
         min-width: 600px;
+        max-height: 410px;
     }
     #lab-desc-img {
         text-align: center;
