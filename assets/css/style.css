@@ -53,7 +53,7 @@ hr {
     text-decoration: none;
 }
 
-.content-container {
+.flex-container {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
@@ -205,7 +205,6 @@ hr {
     text-align: left;
     padding: 1.6rem;
     color:#0b3127;
-    /* min-width: 300px; */
 }
 
 .slides::-webkit-scrollbar {
@@ -214,7 +213,6 @@ hr {
 }
 .slides::-webkit-scrollbar-thumb {
     background: #18453B;
-    /* background: #fff; */
     border-radius: 10px;
 }
 .slides::-webkit-scrollbar-track {
@@ -263,7 +261,6 @@ hr {
 /* ------------------------------------------- */
 #outreach-div-background {
     background-color: #18453b;
-    /* background-color: #fff; */
 }
 
 #outreach-div {
@@ -303,7 +300,7 @@ hr {
     #lab-desc-img {
         text-align: center;
     }
-    .content-container {
+    .flex-container {
         flex-direction: column;
     }
     #lab-desc-text, #services-text {
