@@ -3,22 +3,14 @@
 /* changed width of .col-md-8 from 66.66667% to 100% in 'bootstrap.css' */
 /* Changed primary-navigation to have no bottom margin */
 /* changed .dfm_foot to have no top margin*/
+
 .container p {
     font-size: 18px;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: #fff;
-}
-
-div {
-    box-sizing: border-box;
 }
 
 h2 {
@@ -65,10 +57,10 @@ hr {
     margin-bottom: 0;
 }
 
-#wrapper {
+/* #wrapper {
     position: relative;
     overflow-x: hidden;
-}
+} */
 
 /* ------------------------------------------- */
 
@@ -153,7 +145,7 @@ hr {
 #lab-desc-div img {
     padding: 1.1rem;
     max-width: 600px;
-    min-width: 300px;
+    min-width: 400px;
     width: 100%;
     height: auto;
 }
