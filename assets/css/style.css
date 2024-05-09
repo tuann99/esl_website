@@ -57,6 +57,11 @@ hr {
     margin-bottom: 0;
 }
 
+.background-color-div-18453B {
+    background-color: #18453B;
+
+}
+
 /* #wrapper {
     position: relative;
     overflow-x: hidden;
@@ -94,7 +99,6 @@ hr {
 /* ------------------------------------------- */
 
 #study-contact-div {
-    background-color: #18453B;
     text-align: center;
     padding: 6rem 0;
 }
@@ -251,9 +255,6 @@ hr {
 }
 
 /* ------------------------------------------- */
-#outreach-div-background {
-    background-color: #18453b;
-}
 
 #outreach-div {
     display: block;
