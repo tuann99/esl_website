@@ -61,6 +61,10 @@ hr {
     background-color: #18453B;
 }
 
+#wrapper {
+    overflow-x: hidden;
+}
+
 /* ------------------------------------------- */
 
 #intro-div {
