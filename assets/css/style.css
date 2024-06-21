@@ -354,6 +354,10 @@ header.masthead {
 #brand span {display:inline-block; white-space:nowrap;}
 #msu, #brand, .home #brand span {display:block;}
 
+#msu img {
+    max-width: 300px;
+}
+
 #brand {font-family:"GothamBook"; margin:1em 0 1em; font-size:0.9em;}
 #brand .college {font-family:"GothamBook"; font-size:1.8em; letter-spacing:1px;}
 #brand .department {font-family:"GothamBlack"; text-transform:uppercase;font-size:1.8em; letter-spacing:2px;}
