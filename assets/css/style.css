@@ -351,7 +351,7 @@ header.masthead {
     size: 1000px;
 }
 
-#band span {display:inline-block; white-space:nowrap;}
+#brand span {display:inline-block; white-space:nowrap;}
 #msu, #brand, .home #brand span {display:block;}
 
 #brand {font-family:"GothamBook"; margin:1em 0 1em; font-size:0.9em;}
